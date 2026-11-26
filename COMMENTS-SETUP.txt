@@ -1,0 +1,27 @@
+TURKEY EVISA - COMMENTS SETUP
+===================================
+Website: https://evisa-turkey.github.io/turkey-evisa/
+
+This ZIP contains all 32 original HTML pages, the original image asset,
+and the new shared Disqus comments script. The comments section has been
+added just above the footer on every page.
+
+ONE-TIME CONFIGURATION:
+
+1. Visit https://disqus.com/ and register your website:
+   https://evisa-turkey.github.io/turkey-evisa/
+2. Find your registered Disqus shortname (example: my-turkey-site).
+3. Edit assets/js/disqus-comments.js
+4. Replace this exact line:
+       var DISQUS_SHORTNAME = 'YOUR_DISQUS_SHORTNAME';
+   with your *actual* registered shortname, for example:
+       var DISQUS_SHORTNAME = 'my-turkey-site';
+5. Upload the contents of the turkey-evisa-main folder to the root of the
+   evisa-turkey/turkey-evisa GitHub Pages repository, preserving assets/js/.
+6. Wait for GitHub Pages to deploy, and test the published website.
+
+NOTE: Do not use someone else's shortname. Comments cannot become active
+until the shortname is registered and inserted into the script.
+
+Comment threads remain separate across the 32 HTML pages. The homepage
+(index.html and /) uses a single permanent home-thread identifier.
